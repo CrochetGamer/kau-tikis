@@ -1,0 +1,37 @@
+.main-logo {
+    width: 200px;
+    position: center;
+    border-color: red;
+    border-style: solid;
+}
+.navbar {
+    overflow: hidden;
+    background-color: rgb(154, 230, 78);  
+}
+.navbar a {
+    float: left;
+    display: block;
+    color: rgb(86, 101, 110);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: Verdana;
+    font-weight: bold;
+}
+.navbar a:hover {
+    background-color: rgba(114, 175, 49, .5);
+    color:rgb(86, 101, 110);
+}
+.search-bar {
+    text-align: center;
+    padding: 14px 16px;
+}
+
+
+
+
+
+
+
+
