@@ -1,22 +1,55 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+/* .trade-winds-regular {
+    font-family: "Trade Winds", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+.slackey-regular {
+    font-family: "Slackey", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }   */
 .main-logo {
     width: 200px;
-    position: center;
-    border-color: red;
-    border-style: solid;
+    display: inline-block;
+}
+p {
+    font-family: "Boogaloo", Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    padding: 30px;
+    text-align: center;
+}
+header {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.header-para {
+    display: inline;
+    float: right;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    cursor: pointer;
 }
 .navbar {
     overflow: hidden;
-    background-color: rgb(154, 230, 78);  
+    background-color: rgb(154, 230, 78); 
+    display: inline-block; 
 }
 .navbar a {
     float: left;
     display: block;
     color: rgb(86, 101, 110);
     text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    font-family: Verdana;
+    padding: 10px 16px;
+    text-decoration: none !important;
+    font-family: "Slackey";
+    font-size: 20px;
     font-weight: bold;
 }
 .navbar a:hover {
@@ -25,10 +58,158 @@
 }
 .search-bar {
     text-align: center;
-    padding: 14px 16px;
+    padding: 6px 5px;
+    border: none;
+    border-radius: 4px;
+    vertical-align: center;
+}
+.search-button {
+    border: none;
+}
+.order-banner {
+    font-family: "Slackey", Arial, Helvetica, sans-serif;
+    color: rgb(86, 101, 110);
+    display: inline;
+    position: absolute;
+    top: 5px;
+    left: 300px;
+    /* border: solid; */
+    /* border-color: rgb(86, 101, 110); */
+    border-radius: 30px;
+    background-color: rgb(154, 230, 78);
+}
+.question {
+    font-family: "Boogaloo", Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    margin: 30px 30px 0 30px;
+    font-weight: bold;
+    background-color: rgb(154, 230, 78);
+    padding: 10px;
+    font-size: 1.5rem;
+    border-radius: 7px;
+    color: rgb(16, 101, 16);
+    text-align: center;
+}
+.answer {
+    font-family: "Boogaloo", Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 100;
+    margin-top: 0;
+    margin-bottom: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-weight: 600;
+    background-color: rgb(210, 244, 210);
+    padding: 10px;
+    border-radius: 7px;
+}
+.faqs-intro {
+    font-family: "Boogaloo";
+    font-size: 1.5rem;
+    margin: 30px;
+    text-align: center;
+}
+h1, h2 {
+    color:  rgb(86, 101, 110);
+    text-align: center;
+    margin-top: 80px;
+    font-family: "Slackey";
+}
+.item-anchor {
+    display: block;
+}
+.item-for-sale-div {
+    display: inline-block;
+    max-width: 300px;
+    height: 500px;
+    margin: 20px;
+    padding: 15px;
+    /* border: solid red 2px; */
+    display: inline-block;
+    /* background-color: rgb(200, 241, 200); */
+    background-color: rgb(154, 230, 78);
+    border-radius: 10px;
+}
+.item-picture {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform .4s;
+}
+.item-pic-div {
+    overflow: hidden;
+    border-radius: 10px;
+}
+.item-picture:hover {
+    transform: scale(1.1);
+    overflow: hidden !important;
 }
 
+.item-name {
+    margin: 0;
+    padding: 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: "Slackey";
+    font-size: 1.7rem;
+    color: rgb(86, 101, 110);
+    overflow-wrap: break-word;
+}
+.item-price {
+    font-family: "Boogaloo";
+    margin: 0;
+    font-weight: bold;
+    font-size: 2rem;
+    color: rgb(86, 101, 110);;
+}
+.main-prod-img {
+    width: 400px;
+    border-radius: 40px;
+    
+}
 
+/* TEST STYLES */
+.image-gallery {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product-container {
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.variant-selector {
+    margin-bottom: 20px;
+}
+
+.variant-image {
+    max-width: 250px;
+    height: auto;
+    border-radius: 4px;
+    border: 2px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    /* Hide all images by default */
+    display: none;
+}
+
+/* Show the active image */
+.variant-image.active {
+    display: flex;
+}
+
+select {
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
 
 
 
