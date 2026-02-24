@@ -15,6 +15,7 @@ html {
 .main-logo {
     width: 200px;
     display: inline-block;
+    margin-left: 20px;
 }
 p {
     font-family: "Boogaloo", Arial, Helvetica, sans-serif;
@@ -24,12 +25,8 @@ p {
 }
 header {
     margin-top: 20px;
-    margin-bottom: 20px;
 }
-.header-para {
-    display: inline;
-    float: right;
-}
+
 a {
     text-decoration: none;
 }
@@ -40,6 +37,8 @@ a:hover {
     overflow: hidden;
     background-color: rgb(154, 230, 78); 
     display: inline-block; 
+    border-radius: 20px;
+    margin: 20px;
 }
 .navbar a {
     float: left;
@@ -69,14 +68,15 @@ a:hover {
 .order-banner {
     font-family: "Slackey", Arial, Helvetica, sans-serif;
     color: rgb(86, 101, 110);
-    display: inline;
-    position: absolute;
-    top: 5px;
-    left: 300px;
-    /* border: solid; */
-    /* border-color: rgb(86, 101, 110); */
+    float: right;
+    margin: 30px 30px auto;
     border-radius: 30px;
     background-color: rgb(154, 230, 78);
+    padding: 30px 30px 30px;
+    border: 4px solid rgba(114, 175, 49, .5);
+    font-size: 22px;
+    width: 200px;
+    text-align: center;
 }
 .question {
     font-family: "Boogaloo", Arial, Helvetica, sans-serif;
