@@ -12,6 +12,16 @@ html {
     font-weight: 400;
     font-style: normal;
   }   */
+
+/* @media (max-width: 400px) {
+    .item-for-sale-div {
+        display: block;
+        margin-left: ;
+        margin-right: auto;
+    }
+    
+} */
+
 .main-logo {
     width: 200px;
     display: inline-block;
@@ -164,11 +174,6 @@ h1, h2 {
     font-size: 2rem;
     color: rgb(86, 101, 110);
 }
-.main-prod-img {
-    width: 400px;
-    border-radius: 40px;
-    
-}
 
 /* TEST STYLES */
 .image-gallery {
@@ -230,6 +235,37 @@ footer {
     width: 400px;
 }
 
+/* Testing some zooming on starfish tiki page below */
 
-
-
+.main-prod-img {
+    width: 200px;
+    border-radius: 20px;
+    margin: 10px 10px;
+    cursor: zoom-in;
+    transition: transform 0.5s ease;
+}
+/* Keeps images in a line */
+.zoomed {
+    display: inline-block;
+}
+/* Hides the zoom checkbox */
+#zoom-1,
+#zoom-2,
+#zoom-3,
+#zoom-4 {
+    display: none;
+}
+/* What happens when you click to zoom */
+#zoom-1:checked ~ label img,
+#zoom-2:checked ~ label img,
+#zoom-3:checked ~ label img,
+#zoom-4:checked ~ label img {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(4);
+    cursor: zoom-out;
+    max-width: 90vw;
+    max-height: 90vh;
+    box-shadow: black, 4000px;
+}
