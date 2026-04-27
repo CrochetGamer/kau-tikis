@@ -33,6 +33,21 @@ p {
     padding: 30px;
     text-align: center;
 }
+
+.welcome {
+    font-family: "Slackey", Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    padding: 30px;
+    text-align: center;
+    color:rgb(86, 101, 110);
+}
+
+.home-flower {
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+
 header {
     margin-top: 20px;
 }
