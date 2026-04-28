@@ -251,6 +251,7 @@ footer {
 }
 
 /* Testing some zooming on starfish tiki page below */
+/* ALL STYLES BELOW ARE ON EACH ITEM PAGE */
 
 .main-prod-img {
     width: 200px;
@@ -267,14 +268,22 @@ footer {
 #zoom-1,
 #zoom-2,
 #zoom-3,
-#zoom-4 {
+#zoom-4,
+#zoom-5,
+#zoom-6,
+#zoom-7,
+#zoom-8 {
     display: none;
 }
 /* What happens when you click to zoom */
 #zoom-1:checked ~ label img,
 #zoom-2:checked ~ label img,
 #zoom-3:checked ~ label img,
-#zoom-4:checked ~ label img {
+#zoom-4:checked ~ label img,
+#zoom-5:checked ~ label img,
+#zoom-6:checked ~ label img,
+#zoom-7:checked ~ label img,
+#zoom-8:checked ~ label img {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -282,5 +291,36 @@ footer {
     cursor: zoom-out;
     max-width: 90vw;
     max-height: 90vh;
-    box-shadow: black, 4000px;
 }
+
+.item-info {
+    font-family: "Boogaloo", Arial, Helvetica, sans-serif;
+    padding: 0 auto;
+    margin: 0 auto;
+}
+
+.item-dimensions {
+    padding: 0;
+    margin: 0 auto;
+    font-size: 2rem;
+}
+
+.important-banner {
+    color: rgb(245, 8, 8);
+    font-family: "Boogaloo", Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: auto;
+    padding: 0 auto;
+    max-width: 500px;
+}
+
+.main-item-price {
+    font-family: "Boogaloo", Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+}
+
+
