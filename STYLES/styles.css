@@ -104,6 +104,17 @@ a:hover {
     max-width: 350px;
     text-align: center;
 }
+
+/* LINKS, COLORS, VISITED, HOVER, ACTIVE */
+a:link,
+a:visited {
+    color: rgb(16, 101, 16);
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* FAQ QUESTIONS & ANSWERS BELOW */
 .question {
     font-family: "Boogaloo", Arial, Helvetica, sans-serif;
     font-size: 2rem;
