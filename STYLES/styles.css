@@ -22,24 +22,70 @@ html {
     
 } */
 
-.main-logo {
-    width: 200px;
-    display: inline-block;
-    margin-left: 20px;
+a {
+    text-decoration: none;
 }
-p {
+a:hover {
+    cursor: pointer;
+}
+
+/* LINKS, COLORS, VISITED, HOVER, ACTIVE */
+a:link,
+a:visited {
+    color: rgb(16, 101, 16);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* FAQ ANSWERS */
+.answer {
     font-family: "Boogaloo", Arial, Helvetica, sans-serif;
     font-size: 1.5rem;
-    padding: 30px;
+    font-weight: 100;
+    margin-top: 0;
+    margin-bottom: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-weight: 600;
+    background-color: rgb(210, 244, 210);
+    padding: 10px;
+    border-radius: 7px;
+}
+
+.faqs-intro {
+    font-family: "Boogaloo";
+    font-size: 1.5rem;
+    margin: 30px;
     text-align: center;
 }
 
-.welcome {
-    font-family: "Slackey", Arial, Helvetica, sans-serif;
-    font-size: 1.5rem;
-    padding: 30px;
+footer {
+    font-family: "Slackey";
+    background-color: rgb(154, 230, 78);
+    color: rgb(86, 101, 110);
     text-align: center;
-    color:rgb(86, 101, 110);
+    font-size: 30px;
+    border-radius: 10px;
+    margin: 40px auto;
+    width: 400px;
+}
+
+h1, h2 {
+    color:  rgb(86, 101, 110);
+    text-align: center;
+    margin-top: 80px;
+    font-family: "Slackey";
+}
+h2.subheader {
+    font-size: 1.5rem;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+header {
+    margin-top: 20px;
 }
 
 .home-flower {
@@ -48,16 +94,71 @@ p {
     float: left;
 }
 
-header {
-    margin-top: 20px;
+/* TEST STYLES */
+.image-gallery {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-a {
-    text-decoration: none;
+.item-anchor {
+    display: block;
 }
-a:hover {
-    cursor: pointer;
+.item-for-sale-div {
+    display: inline-block;
+    max-width: 300px;
+    height: 500px;
+    margin: 20px;
+    padding: 15px;
+    /* border: solid red 2px; */
+    display: inline-block;
+    /* background-color: rgb(200, 241, 200); */
+    background-color: rgb(154, 230, 78);
+    border-radius: 10px;
 }
+
+.item-name {
+    margin: 0;
+    padding: 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: "Slackey";
+    font-size: 1.7rem;
+    color: rgb(86, 101, 110);
+    overflow-wrap: break-word;
+}
+
+.item-picture {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform .4s;
+}
+.item-pic-div {
+    overflow: hidden;
+    border-radius: 10px;
+}
+.item-picture:hover {
+    transform: scale(1.1);
+    overflow: hidden !important;
+}
+
+.item-price {
+    font-family: "Boogaloo";
+    margin: 0;
+    font-weight: bold;
+    font-size: 2rem;
+    color: rgb(86, 101, 110);
+}
+
+.main-logo {
+    width: 200px;
+    display: inline-block;
+    margin-left: 20px;
+}
+
 .navbar {
     overflow: hidden;
     background-color: rgb(154, 230, 78); 
@@ -80,16 +181,7 @@ a:hover {
     background-color: rgba(114, 175, 49, .5);
     color:rgb(86, 101, 110);
 }
-.search-bar {
-    text-align: center;
-    padding: 6px 5px;
-    border: none;
-    border-radius: 4px;
-    vertical-align: center;
-}
-.search-button {
-    border: none;
-}
+
 .order-banner {
     font-family: "Slackey", Arial, Helvetica, sans-serif;
     color: rgb(86, 101, 110);
@@ -105,16 +197,22 @@ a:hover {
     text-align: center;
 }
 
-/* LINKS, COLORS, VISITED, HOVER, ACTIVE */
-a:link,
-a:visited {
-    color: rgb(16, 101, 16);
-}
-a:hover {
-    text-decoration: underline;
+p {
+    font-family: "Boogaloo", Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    padding: 30px;
+    text-align: center;
 }
 
-/* FAQ QUESTIONS & ANSWERS BELOW */
+.product-container {
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* FAQ QUESTIONS */
 .question {
     font-family: "Boogaloo", Arial, Helvetica, sans-serif;
     font-size: 2rem;
@@ -127,94 +225,36 @@ a:hover {
     color: rgb(16, 101, 16);
     text-align: center;
 }
-.answer {
-    font-family: "Boogaloo", Arial, Helvetica, sans-serif;
-    font-size: 1.5rem;
-    font-weight: 100;
-    margin-top: 0;
-    margin-bottom: 100px;
-    margin-left: 50px;
-    margin-right: 50px;
-    font-weight: 600;
-    background-color: rgb(210, 244, 210);
-    padding: 10px;
-    border-radius: 7px;
-}
-.faqs-intro {
-    font-family: "Boogaloo";
-    font-size: 1.5rem;
-    margin: 30px;
+
+.search-bar {
     text-align: center;
+    padding: 6px 5px;
+    border: none;
+    border-radius: 4px;
+    vertical-align: center;
 }
-h1, h2 {
-    color:  rgb(86, 101, 110);
-    text-align: center;
-    margin-top: 80px;
-    font-family: "Slackey";
-}
-.item-anchor {
-    display: block;
-}
-.item-for-sale-div {
-    display: inline-block;
-    max-width: 300px;
-    height: 500px;
-    margin: 20px;
-    padding: 15px;
-    /* border: solid red 2px; */
-    display: inline-block;
-    /* background-color: rgb(200, 241, 200); */
-    background-color: rgb(154, 230, 78);
-    border-radius: 10px;
-}
-.item-picture {
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 10px;
-    transition: transform .4s;
-}
-.item-pic-div {
-    overflow: hidden;
-    border-radius: 10px;
-}
-.item-picture:hover {
-    transform: scale(1.1);
-    overflow: hidden !important;
+.search-button {
+    border: none;
 }
 
-.item-name {
-    margin: 0;
-    padding: 0;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    font-family: "Slackey";
-    font-size: 1.7rem;
-    color: rgb(86, 101, 110);
-    overflow-wrap: break-word;
-}
-.item-price {
-    font-family: "Boogaloo";
-    margin: 0;
-    font-weight: bold;
-    font-size: 2rem;
-    color: rgb(86, 101, 110);
+select {
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 16px;
 }
 
-/* TEST STYLES */
-.image-gallery {
+.spacing-flower {
+    height: 80px;
     display: flex;
-    gap: 15px;
-    flex-wrap: wrap;
     justify-content: center;
 }
 
-.product-container {
-    padding: 20px;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
+.tiki-type-header {
+    background-color: rgb(154, 230, 78);
+    border-radius: 23px;
+    padding: 15px;
+    margin-top: 80px;
 }
 
 .variant-selector {
@@ -236,30 +276,21 @@ h1, h2 {
     display: flex;
 }
 
-select {
-    padding: 8px 12px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    font-size: 16px;
-}
-
-.tiki-type-header {
-    background-color: rgb(154, 230, 78);
-    border-radius: 23px;
-    padding: 15px;
-    margin-top: 150px;
-}
-
-footer {
-    font-family: "Slackey";
-    background-color: rgb(154, 230, 78);
-    color: rgb(86, 101, 110);
+.welcome {
+    font-family: "Slackey", Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    padding: 30px;
     text-align: center;
-    font-size: 30px;
-    border-radius: 10px;
-    margin: 40px auto;
-    width: 400px;
+    color:rgb(86, 101, 110);
 }
+
+
+
+
+
+
+
+
 
 /* Testing some zooming on starfish tiki page below */
 /* ALL STYLES BELOW ARE ON EACH ITEM PAGE */
