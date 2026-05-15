@@ -180,6 +180,7 @@ header {
 .navbar a:hover {
     background-color: rgba(114, 175, 49, .5);
     color:rgb(86, 101, 110);
+    border-radius: 20px;
 }
 
 .order-banner {
@@ -317,6 +318,31 @@ select {
 #zoom-8 {
     display: none;
 }
+/* Locks website page scrolling while product picture is zoomed in  */
+body:has(#zoom-1:checked, 
+#zoom-1:checked, 
+#zoom-2:checked, 
+#zoom-3:checked, 
+#zoom-4:checked, 
+#zoom-5:checked, 
+#zoom-6:checked, 
+#zoom-7:checked, 
+#zoom-8:checked) {
+    overflow: hidden;
+}
+
+/* Backdrop that covers the background when zoomed in */
+.backdrop {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.90);
+    z-index: 9998;
+    cursor: zoom-out;
+}
 /* What happens when you click to zoom */
 #zoom-1:checked ~ label img,
 #zoom-2:checked ~ label img,
@@ -333,8 +359,19 @@ select {
     cursor: zoom-out;
     max-width: 90vw;
     max-height: 90vh;
+    z-index: 9999;
 }
-
+/* Backdrop actually covering while zoomed in */
+#zoom-1:checked ~ .backdrop,
+#zoom-2:checked ~ .backdrop,
+#zoom-3:checked ~ .backdrop,
+#zoom-4:checked ~ .backdrop,
+#zoom-5:checked ~ .backdrop,
+#zoom-6:checked ~ .backdrop,
+#zoom-7:checked ~ .backdrop,
+#zoom-8:checked ~ .backdrop {
+    display: block;
+}
 .item-info {
     font-family: "Boogaloo", Arial, Helvetica, sans-serif;
     padding: 0 auto;
