@@ -193,10 +193,16 @@ header {
     background-color: rgb(154, 230, 78);
     padding: 10px;
     border: 4px solid rgba(114, 175, 49, .5);
-    font-size: 22px;
+    font-size: 30px;
     /* width: 350px; */
-    max-width: 350px;
+    max-width: 400px;
     text-align: center;
+    transition: .25s ease-in-out;
+}
+
+.order-banner:hover {
+    border-width: 10px;
+    transition: .25s ease-in-out;
 }
 
 p {
