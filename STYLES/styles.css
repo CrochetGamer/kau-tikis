@@ -92,6 +92,25 @@ header {
     margin-top: 20px;
 }
 
+/* HOME PRODUCT BANNERS */
+.home-banner {
+    height: 400px;
+    margin: 40px;
+    border-radius: 20px;
+}
+#first {
+    height: 400px;
+    background-color: #F893C0;
+}
+#second {
+    height: 100;
+    background-color: #deb1d8;
+}
+#third {
+    height: 100;
+    background-color: #F8904F;
+}
+
 .home-flower {
     width: 100px;
     height: 100px;
