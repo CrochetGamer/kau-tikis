@@ -99,55 +99,68 @@ header {
     padding: 20px;
     border-radius: 20px;
 }
-#first {
-    height: 400px;
-    background-color: #F893C0;
-    font-family: "Slackey";
-    transition: background-image 0.4s ease-in-out;
-    background-image: linear-gradient(90deg, #F893C0, #CF6090);
-}
-#second {
-    height: 100;
-    background-color: #deb1d8;
-}
+#first,
+#second,
 #third {
-    height: 100;
-    background-color: #F8904F;
+    height: 400px;
+    background-color: rgb(154, 230, 78);
+    font-family: "Slackey";
+    transition: 1s;
 }
-#first img {
+
+#first img,
+#second img,
+#third img {
     height: 200px;
     border-radius: 100px;
     display: block;
     margin: 15px auto;
-    transition: transform .4s;
-    
+    color: rgb(154, 230, 78);
+    transition: 1s;
 }
-#first:hover img {
+#first:hover img,
+#second:hover img,
+#third:hover img {
     transform: scale(1.1);
     overflow: hidden !important;
+    border: 3px solid rgb(154, 230, 78);
 }
-#first:hover {
-    background-image: linear-gradient(45deg, #F893C0, #CF6090);
-    transform: background-image 0.4s ease-in-out;
+#first:hover,
+#second:hover,
+#third:hover {
+    background-color: rgb(86, 101, 110);
+    transition: 1s;
+}
+#first:hover p,
+#second:hover p,
+#third:hover p {
+    color: rgb(154, 230, 78);
 }
 .banner-text {
     font-family: "Slackey";
     margin: 10px 0;
     padding: 0;
-    color: #A33C66;
+    color: rgb(86, 101, 110);
     font-size: 40px;
     text-decoration: none;
 }
 .item-banner-link:link {
     text-decoration: none !important;
 }
-
-
 .home-flower {
     width: 100px;
     height: 100px;
     float: left;
 }
+/* END HOME BANNERS */
+
+
+/* HIGHLIGHTS */
+.highlight {
+    background-color: rgb(154, 230, 78);
+    border-radius: 10px;
+}
+
 
 /* TEST STYLES */
 .image-gallery {
